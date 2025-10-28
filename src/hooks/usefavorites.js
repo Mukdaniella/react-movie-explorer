@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
 
-const useFavorites = () => {
+export const useFavorites = () => {
   const [favorites, setFavorites] = useState(() => {
     const saved = localStorage.getItem("favorites");
     return saved ? JSON.parse(saved) : [];
@@ -22,5 +22,3 @@ const useFavorites = () => {
 
   return { favorites, addFavorite, removeFavorite };
 };
-
-export default useFavorites;

@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
 
-const useFetchMovies = () => {
+export const useFetchMovies = () => {
   const [movies, setMovies] = useState([]);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState(null);
@@ -32,5 +32,3 @@ const useFetchMovies = () => {
 
   return { movies, loading, error };
 };
-
-export default useFetchMovies;
