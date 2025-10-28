@@ -1,18 +1,82 @@
-# React + Vite
+# 🎬 Movie Explorer
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Movie Explorer is a **Single Page Application (SPA)** built with **React** that allows users to explore, search, filter, and favorite movies. It’s designed to be interactive, responsive, and user-friendly.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 📝 Features
 
-## React Compiler
+- **Browse Movies:** Explore a list of movies fetched from a public API (TVMaze).  
+- **Movie Details:** View detailed information for each movie.  
+- **Search:** Search movies by name dynamically.  
+- **Filter by Category:** Filter movies based on genres.  
+- **Favorites:** Add or remove movies from your favorites, persisted in `localStorage`.  
+- **Routing:** Navigate between pages using React Router:
+  - `/` → Home (movie list)
+  - `/movie/:id` → Movie details
+  - `/favorites` → Favorite movies  
+- **Responsive Design:** Works on desktop, tablet, and mobile.  
+- **Custom Hooks:** `useFetchMovies` and `useFavorites` for reusability.  
 
-The React Compiler is enabled on this template. See [this documentation](https://react.dev/learn/react-compiler) for more information.
+**Bonus Features (Optional):**
+- Dark/Light mode toggle  
+- Animated movie cards  
+- Modal for movie details  
+- Pagination / Infinite scroll  
 
-Note: This will impact Vite dev & build performances.
+---
 
-## Expanding the ESLint configuration
+## 🛠️ Technologies Used
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+- **React** – Frontend library  
+- **Tailwind CSS** – Styling  
+- **React Router DOM** – Routing  
+- **TVMaze API** – Movie data  
+- **LocalStorage** – Persisting favorites  
+- **Vite** – React development environment  
+
+---
+
+## 📂 Project Structure
+
+src/
+├─ components/
+│ ├─ Navbar.jsx
+│ ├─ MovieCard.jsx
+│ ├─ SearchBar.jsx
+│ └─ CategoryFilter.jsx
+├─ pages/
+│ ├─ Home.jsx
+│ ├─ MovieDetails.jsx
+│ └─ Favorites.jsx
+├─ hooks/
+│ ├─ useFetchMovies.js
+│ └─ useFavorites.js
+├─ utils/
+│ └─ api.js
+├─ App.jsx
+└─ main.jsx
+
+## 🚀 Installation
+
+1. **Clone the repository:**
+   ```bash
+   git clone https://github.com/yourusername/movie-explorer.git
+   cd movie-explorer
+2. Install dependencies:
+   npm install
+3.Run the development server:
+  npm run dev
+🎨 Usage
+
+Browse movies on the Home page.
+
+Click a movie card to see detailed information.
+Use the search bar to find movies by name.
+Use the category filter to narrow results.
+Click the heart icon to add a movie to your favorites.
+View all favorites on the Favorites page.
+
+📷 Screenshots
+![Home Page](screenshots/home.png)
+
