@@ -61,7 +61,7 @@ src/
 
 1. **Clone the repository:**
    ```bash
-   git clone https://github.com/yourusername/movie-explorer.git
+   git clone https://github.com/Mukdaniella/react-movie-explorer.git
    cd movie-explorer
 2. Install dependencies:
    npm install
@@ -78,5 +78,6 @@ Click the heart icon to add a movie to your favorites.
 View all favorites on the Favorites page.
 
 📷 Screenshots
-![Home Page](screenshots/home.png)
+<img width="1893" height="871" alt="Screenshot 2025-12-17 113634" src="https://github.com/user-attachments/assets/2deaca2b-acba-4d0b-a07c-16473b8ba261" />
+
 
